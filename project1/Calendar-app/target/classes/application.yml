@@ -1,0 +1,17 @@
+# http port number(default 8080)
+server: 
+  port: 8085
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+# db connection(oracle) - spring(context.xml)
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: pj_01
+    password: 1234
